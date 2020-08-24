@@ -4,11 +4,11 @@
 	<creationDate>2020-08-08</creationDate>
 	<author>Israel Romero</author>
 	<authorEmail>israromero@outlook.com</authorEmail>
-	<authorUrl>http://www.acercadehtml.com</authorUrl>
+	<authorUrl>https://www.acercadehtml.com</authorUrl>
 	<copyright>Israel Romero 2020</copyright>
 	<license>GNU/GPL</license>
-	<version>1.0.0</version>
-	<description>My New Template</description>
+	<version>0.0.1</version>
+	<description>Template Minimalista</description>
 	<files>
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
@@ -20,10 +20,6 @@
 		<position>left</position>
 		<position>right</position>
 		<position>top</position>
-		<position>user1</position>
-		<position>user2</position>
-		<position>user3</position>
-		<position>user4</position>
 		<position>footer</position>
 	</positions>
 </extension>
