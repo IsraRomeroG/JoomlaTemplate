@@ -23,7 +23,7 @@ $assocParam = (JLanguageAssociations::isEnabled() && $params->get('show_associat
 JHtml::_('behavior.caption');
 
 ?>
-	<article itemscope itemtype="https://schema.org/Article">
+<article itemscope itemtype="https://schema.org/Article">
 		<meta itemprop="inLanguage" content="<?php echo ($this->item->language === '*') ? JFactory::getConfig()->get('language') : $this->item->language; ?>" />
 <?php
 	if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->paginationposition && $this->item->paginationrelative)
@@ -74,7 +74,6 @@ JHtml::_('behavior.caption');
 		<?php echo $this->item->text; ?>
 
 	</div>
-
 <?php
 		if ($info == 1 || $info == 2) :
 			if ($useDefList) :

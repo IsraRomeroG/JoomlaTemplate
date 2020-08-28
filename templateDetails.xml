@@ -16,10 +16,11 @@
 		<folder>css</folder>
 	</files>
 	<positions>
+		<position>top</position>
+		<position>menu</position>
 		<position>breadcrumb</position>
 		<position>left</position>
 		<position>right</position>
-		<position>top</position>
 		<position>footer</position>
 	</positions>
 </extension>
