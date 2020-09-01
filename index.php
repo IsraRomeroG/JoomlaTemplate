@@ -17,6 +17,7 @@
 	<jdoc:include type="modules" name="menu" />
 	</nav>
 </header>
+
 <div id="up"><!--Este div está la sombra superior-->
         <!--Posiblemente <div id="ruta">Ruta</div>-->
 <!--        
