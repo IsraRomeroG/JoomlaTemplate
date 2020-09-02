@@ -1,12 +1,16 @@
-<?php defined( '_JEXEC' ) or die( 'Restricted access' );?>
+<?php 
+defined( '_JEXEC' ) or die( 'Restricted access' );
+
+require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'rendererheader.php';
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" 
    xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
 
 <head>
-<jdoc:include type="head" />
+    <jdoc:include type="head" />
 
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
 </head>
 
 <body>
@@ -17,12 +21,7 @@
 	<jdoc:include type="modules" name="menu" />
 	</nav>
 </header>
-
 <div id="up"><!--Este div está la sombra superior-->
-        <!--Posiblemente <div id="ruta">Ruta</div>-->
-<!--        
-<script data-ad-client="ca-pub-1258438679306279" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
--->
 	<jdoc:include type="modules" name="top" />
 </div>
 <div id="page">
@@ -30,7 +29,7 @@
     	<jdoc:include type="modules" name="breadcrumb" />
 		<jdoc:include type="component" />
 	</div><aside>
-
+        <jdoc:include type="modules" name="aside" />
             <!--Adsense 300x600->
             <div class="pub300x600">
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

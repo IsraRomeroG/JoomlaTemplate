@@ -273,6 +273,94 @@ td, th{
     font-weight: bold;
 }
 
+/*INICIO JOOMLA CSS*/
+/* +++++++++++++++++++++++ pagenav +++++++++++++++++++++++  */
+/*
+.pagenav {
+    text-align: right
+}
+
+
+.pagenav ul {
+    display: inline-block;
+    *display: inline;
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+*/
+/*
+.pagenav li {
+    display: inline;
+    margin: 0;
+    padding: 0
+}
+
+.pagenav a,span.pagenav {
+    padding: 0 14px;
+    margin: 0;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-left: 0 solid #ddd;
+    display: inline-block;
+    line-height: 1.9em;
+}
+
+.pagenav li:first-child a,.pagination-start span {
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    border-left: solid 1px #ddd
+}
+
+.pagenav li:last-child a,.pagination-end span {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.pagination ul {
+    margin: 10px 10px 10px 0;
+    padding: 0
+}
+*/
+.pagination li {
+    display: inline;
+}
+/*
+.pagination a {
+    padding: 0 14px;
+    line-height: 2em;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-left: 0 solid #ddd;
+    display: inline-block
+}
+
+.pagination .active a {
+    cursor: default;
+}
+
+.pagination span,.pagination span  a:hover {
+    cursor: default;
+    padding: 0 14px;
+    line-height: 2em;
+}
+
+.pagination li:first-child a {
+    border-left-width: 1px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.pagination li:last-child a {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}*/
+/*FIN JOOMLA CSS*/
+
 @media(max-width: 999px){
     nav{
         text-align: center;

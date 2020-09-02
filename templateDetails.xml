@@ -19,8 +19,7 @@
 		<position>top</position>
 		<position>menu</position>
 		<position>breadcrumb</position>
-		<position>left</position>
-		<position>right</position>
+		<position>aside</position>
 		<position>footer</position>
 	</positions>
 </extension>
