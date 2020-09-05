@@ -124,6 +124,7 @@ class HeadRenderer extends DocumentRenderer
 		// Don't add empty generators
 		$generator = $document->getGenerator();
 
+//Se comenta para evitar el <meta name="generator" content="Joomla! - Open Source Content Management" />
 		/*if ($generator)
 		{
 			$buffer .= $tab . '<meta name="generator" content="' . htmlspecialchars($generator, ENT_COMPAT, 'UTF-8') . '" />' . $lnEnd;
@@ -261,6 +262,7 @@ class HeadRenderer extends DocumentRenderer
 		$html5NoValueAttributes = array('defer', 'async');
 
 		// Generate script file links
+/*
 		foreach ($document->_scripts as $src => $attribs)
 		{
 			// Check if script uses IE conditional statements.
@@ -337,8 +339,10 @@ class HeadRenderer extends DocumentRenderer
 
 			$buffer .= $lnEnd;
 		}
+*/
 
 		// Generate script declarations
+/*
 		foreach ($document->_script as $type => $content)
 		{
 			$buffer .= $tab . '<script';
@@ -366,6 +370,7 @@ class HeadRenderer extends DocumentRenderer
 
 			$buffer .= $tab . '</script>' . $lnEnd;
 		}
+*/
 
 		// Output the custom tags - array_unique makes sure that we don't output the same tags twice
 		foreach (array_unique($document->_custom) as $custom)
