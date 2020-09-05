@@ -13,9 +13,11 @@ text-decoration: underline;
 }
 header{
 background: #F50;
-max-width: 1100px;
-margin: auto;
 border-bottom: 2px solid #CCC;
+}
+#header{
+max-width: 1200px;
+margin: auto;
 }
 #logoBlock{
 display: inline-block;
@@ -78,9 +80,9 @@ clear:both;
     height: 100%;
     min-height: 950px;
     position: relative;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid #CCC;
+    /*border: 1px solid #CCC;*/
 }
 
 article{
@@ -119,7 +121,7 @@ aside{
     right: 0px;
     bottom: 0px;
     padding: 0%;
-    /*border-left: 1px solid #DDD;*/ /*Rallita*/
+    border-left: 1px solid #DDD; /*Rallita*/
     box-sizing:border-box;
     -moz-box-sizing:border-box;  /*Firefox*/ 
 }
@@ -127,7 +129,7 @@ aside{
 footer{
     background: #F50;
     padding: 10px 2%;
-    color: #DDD;
+    color: #EEE;
     font-size: 0.8em;
     border-top: 2px solid #CCC;
     text-align: right;
@@ -362,27 +364,31 @@ td, th{
 /*FIN JOOMLA CSS*/
 
 @media(max-width: 999px){
-    nav{
-        text-align: center;
-    }
     #contenido{
-        width: 78%;
+        width: 65%;
     }
     aside{
-        width: 22%;
+        width: 300px;
     }
-    .pub300x600{
+    /*.pub300x600{
         display: none;
     }
     .pub160x600{
         display: inline;
+    }*/
+}
+@media(max-width: 860px){
+    #contenido{
+        width: 60%;
     }
 }
 
 
-
-@media(max-width: 767px){
-
+/*@media(max-width: 767px){*/
+@media(max-width: 750px){
+    nav{
+        text-align: center;
+    }
     #logoBlock{
         width: 100%;
     }

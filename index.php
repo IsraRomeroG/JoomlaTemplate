@@ -15,11 +15,13 @@ require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'rendererheader.php';
 
 <body>
 <header>
-	<div id="logoBlock">
-        <a href="<?php echo $this->baseurl ?>/"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" alt="Acerca de HTML" id="logoImg" /></a>
-    </div><nav>
-	<jdoc:include type="modules" name="menu" />
-	</nav>
+    <div id="header">
+    	<div id="logoBlock">
+            <a href="<?php echo $this->baseurl ?>/"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/logo.png" alt="Acerca de HTML" id="logoImg" /></a>
+        </div><nav>
+    	<jdoc:include type="modules" name="menu" />
+    	</nav>
+    </div>
 </header>
 <div id="up"><!--Este div está la sombra superior-->
 	<jdoc:include type="modules" name="top" />
