@@ -44,8 +44,8 @@ if (substr($className, -1) === 's')
 }
 $tagsData = $category->tags->itemTags;
 ?>
-<div>
-	<div class="<?php echo $className .'-category' . $displayData->pageclass_sfx; ?>">
+<article itemscope itemtype="https://schema.org/Article">
+		<meta itemprop="inLanguage" content="es-ES" />
 		<?php if ($params->get('show_page_heading')) : ?>
 			<h1>
 				<?php echo $displayData->escape($params->get('page_heading')); ?>
@@ -64,7 +64,7 @@ $tagsData = $category->tags->itemTags;
 		<?php endif; ?>
 
 		<?php if ($beforeDisplayContent || $afterDisplayContent || $params->get('show_description', 1) || $params->def('show_description_image', 1)) : ?>
-			<div class="category-desc">
+			<div itemprop="articleBody">
 				<?php if ($params->get('show_description_image') && $category->getParams()->get('image')) : ?>
 					<img src="<?php echo $category->getParams()->get('image'); ?>" alt="<?php echo htmlspecialchars($category->getParams()->get('image_alt'), ENT_COMPAT, 'UTF-8'); ?>"/>
 				<?php endif; ?>
@@ -76,7 +76,8 @@ $tagsData = $category->tags->itemTags;
 				<div class="clr"></div>
 			</div>
 		<?php endif; ?>
-		<?php echo $displayData->loadTemplate($displayData->subtemplatename); ?>
+
+		<?php //echo $displayData->loadTemplate($displayData->subtemplatename); ?>
 
 		<?php if ($displayData->maxLevel != 0 && $displayData->get('children')) : ?>
 			<div class="cat-children">
@@ -88,6 +89,5 @@ $tagsData = $category->tags->itemTags;
 				<?php echo $displayData->loadTemplate('children'); ?>
 			</div>
 		<?php endif; ?>
-	</div>
-</div>
+</article>
 
