@@ -9,8 +9,10 @@ require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'rendererheader.php';
 
 <head>
     <jdoc:include type="head" />
-
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -35,7 +37,6 @@ require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'rendererheader.php';
             <!--Adsense 300x600->
             <div class="pub300x600">
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- ADHTML 300x600 ->
                 <ins class="adsbygoogle"
                      style="display:inline-block;width:300px;height:600px"
                      data-ad-client="ca-pub-1258438679306279"
@@ -44,12 +45,11 @@ require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'rendererheader.php';
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-            <!--Fin Adsense-->
+            <! -Fin Adsense-->
 
             <!--Adsense 160x600->
             <div class="pub160x600">
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- ADHTML 160x600 ->
                 <ins class="adsbygoogle"
                      style="display:inline-block;width:160px;height:600px"
                      data-ad-client="ca-pub-1258438679306279"
@@ -58,7 +58,7 @@ require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'rendererheader.php';
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-            <!--Fin Adsense-->
+            <! -Fin Adsense-->
     </aside>
 </div>
 

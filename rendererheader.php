@@ -339,10 +339,10 @@ class HeadRenderer extends DocumentRenderer
 
 			$buffer .= $lnEnd;
 		}
-*/
+
 
 		// Generate script declarations
-/*
+
 		foreach ($document->_script as $type => $content)
 		{
 			$buffer .= $tab . '<script';
