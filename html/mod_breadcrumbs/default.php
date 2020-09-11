@@ -49,7 +49,7 @@ defined('_JEXEC') or die;
 					<span itemprop="name"><?php echo $item->name; ?></span>
 <?php 			endif; 
 	  			if (($key !== $penult_item_key) || $show_last) : ?>
-					<span><img src="/joomla/media/system/images/arrow.png" alt=">" /></span>
+					<span><img src="/media/system/images/arrow.png" alt=">" /></span>
 <?php			endif; ?>
 					<meta itemprop="position" content="<?php echo $key + 1; ?>">
 				</li>
